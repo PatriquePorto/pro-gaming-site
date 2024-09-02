@@ -34,3 +34,85 @@ header.transparent {
     color: #fff;
 }
 
+header.sticky {
+    position: fixed;
+    padding: 10x 25px;
+    background-color: #252629;
+    color: #fff;
+    z-index: 999999;
+}
+
+.logo_mobile {
+    display: none;
+}
+
+.menu_side_area .btn:hover {
+    background-color: var(--primary-color);
+}
+
+.menu_side_area i {
+    display: none;
+    cursor: pointer;
+}
+
+header ul li {
+    position: relative;
+}
+
+header ul {
+    counter-reset: serial-counter;
+}
+
+header ul li a{
+    font-size: 15px;
+}
+
+header ul li::before {
+    content: counter(serial-counter);
+    counter-increment: serial-counter;
+    position: absolute;
+    right: 1px;
+    top: -11px;
+    font-weight: bold;
+    font-size: 10px;
+    color: #999;
+}
+
+header ul li::after {
+    font-family: FontAwesome;
+    content: "\f078";
+    padding-left: 5px;
+    font-size: 8px;
+    position: relative;
+    top: -2px;
+    color: var(--primary-color);
+}
+
+header ul li:first-child:after,
+header ul li:nth-child(3):after,
+header ul li:nth-child(5):after{
+    content: "";
+    right: 5px;
+}
+
+header ul li:first-child::before,
+header ul li:nth-child(3)::before,
+header ul li:nth-child(5)::before{
+    content: "";
+    right: 5px;
+}
+
+header ul li::before {
+    display: none;
+    transition: display 0.5s ease-in-out;
+}
+
+.header.sticky ul{
+     gap: 1rem;
+     transition: gap 0.5s ease-in-out;
+}
+
+.ht {
+    width: 100%;
+    height: 200vh;
+}
