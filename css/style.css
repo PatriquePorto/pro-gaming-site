@@ -342,9 +342,20 @@ header.sticky li::before {
 }
 
 .game_bg h2 {
+    margin-top: 0;
     font-size: 52px;
     line-height: 1.1em;
     letter-spacing: -0.025em;
     padding-bottom: 5px;
     text-transform: capitalize;
+}
+
+.game_bg p {
+    color: #adb7be;
+}
+
+.s_img2 {
+    position: absolute;
+    right: 0;
+    bottom: 0;
 }
