@@ -87,14 +87,14 @@ header ul li::after {
 header ul li:first-child:after,
 header ul li:nth-child(3):after,
 header ul li:nth-child(5):after{
-    content: "";
+    content: ''; 
     right: 5px;
 }
 
 header ul li:first-child::before,
 header ul li:nth-child(3)::before,
 header ul li:nth-child(5)::before{
-    content: "";
+    content: '';
     right: -5px;
 }
 
@@ -238,4 +238,113 @@ header.sticky li::before {
     margin-left: 15px;
 }
 
-/* PAREI EM 1:05:21 */
+.d_cur {
+    color: var(--secondary-color);
+    font-weight: bold;
+    font-size: 18px;
+    margin-left: 15px;
+}
+
+.headerbg .btn {
+    background: linear-gradient(to right, var(--primary-color), var(--secondary-color));
+    border: none;
+}
+
+.headerbg .btn:hover {
+    color: #fff;
+    box-shadow: 0 0 40px 0 rgba(var(--primary-color-rgb), 1);
+}
+
+.swiper-pagination {
+    width: 100%;
+    font-size: 20px;
+    text-align: right;
+    position: absolute;
+    left: auto;
+    right: 40px;
+    bottom: 40px;
+    font-weight: 400;
+}
+
+.swiper-pagination-current {
+    color: #fff;
+    font-size: 40px;
+}
+
+.swiper-button-prev{
+  left: 20px;
+}
+
+.swiper-button-next{
+  right: 20px;
+}
+
+.swiper-scrollbar,
+.swiper-scrollbar-horizontal,
+.swiper-scrollbar-drag {
+    display: none;
+} 
+
+/* ========================================================= */
+/* Premiumserver Section */
+/* ========================================================= */
+
+.premiumserver {
+    padding: 120px 0 120px 0;
+}
+
+.premiumserver h2 {
+    margin-top: 0;
+    font-size: 52px;
+    line-height: 1.1em;
+    letter-spacing: -0.025em;
+    padding-bottom: 5px;
+    text-transform: capitalize;
+}
+
+.p_details {
+    margin-right: 10px;
+}
+
+.p_details h4 {
+    font-size: 24px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    line-height: 26px;
+    color: #fff;
+    font-family: var(--title-font);
+    background: linear-gradient(0deg, #888888 0%, #ffffff 75%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.p_details p {
+    color: #888;
+}
+
+/* ========================================================= */
+/* Stargame Section */
+/* ========================================================= */
+
+.startgame {
+    position: relative;
+    padding: 120px 0 120px 0;
+}
+
+.game_bg {
+    position: relative;
+    background: url('../images/background/1.webp') no-repeat center center/cover;
+    background-position: center;
+    background-attachment: fixed;
+    width: 100%;
+    height: 100%;
+    padding: 70px;
+}
+
+.game_bg h2 {
+    font-size: 52px;
+    line-height: 1.1em;
+    letter-spacing: -0.025em;
+    padding-bottom: 5px;
+    text-transform: capitalize;
+}
