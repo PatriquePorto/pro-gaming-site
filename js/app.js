@@ -47,7 +47,10 @@ $('.comentslick').slick({
    slidesToShow: 5,
    slidesToScroll: 2,
    adaptativeHeight: true,
-   autoplay: true,
+   autoplay: {
+      delay: 3000,
+      disableOnInteraction: false
+   },
    responsive: [
       {
          breakpoint: 1400,
