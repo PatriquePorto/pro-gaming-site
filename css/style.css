@@ -670,7 +670,6 @@ header.sticky li::before {
 .accordion-section-content.active {
     max-height: 500px;
     padding-top: 18px;
-    transition: max-height 0.5s ease 0.5s, padding-top 0.5s ease 0.5s;
 }
 
 
