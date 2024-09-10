@@ -90,3 +90,25 @@ $('.comentslick').slick({
    ]
 })
 
+// Any questions? section
+
+document.getElementById('accordionContainer').addEventListener("click", () => {
+   let target = event.target;
+
+   // check if the clicked element is an accordion header
+   if (target.classList.contains('accordion-header')) {
+      let section = target.nextElementSibling;
+
+      //toggle the active class to trigger the transition
+      section.classList.toggle("active");
+
+      // hide all other sections
+      let allSection = document.querySelectorAll('.accordion-section-content');
+
+      allSection.forEach(function(otherSection){
+         if (otherSection !== section && otherSection.classList.contains('active')){
+               otherSection.classList.remove('active')
+         }
+      })    
+   }  
+})
