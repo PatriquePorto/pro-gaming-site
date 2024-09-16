@@ -27,6 +27,7 @@ document.addEventListener("DOMContentLoaded", () => {
     })
 })
 
+
 // Navbar Sticky Fixed
 
 const mainNav = document.querySelector(".header");
@@ -38,6 +39,24 @@ window.addEventListener("scroll", () => {
       mainNav.classList.remove("sticky");
    }
 })
+
+function toggleMenu() {
+   let menu = document.querySelector('.header_menu');
+   let barsIcon = document.querySelector('.menu_side_area i');
+ 
+   // Toggle the left position to show/hide the menu
+   menu.style.left = menu.style.left === '0px' ? '-250px' : '0px';
+ 
+   // Toggle the class names between 'fa-bars' and 'fa-xmark'
+   if (barsIcon.classList.contains('fa-bars')) {
+       barsIcon.classList.remove('fa-bars');
+       barsIcon.classList.add('fa-xmark');
+   } else {
+       barsIcon.classList.remove('fa-xmark');
+       barsIcon.classList.add('fa-bars');
+   }
+ }
+ 
 
 // Slick Slider Jquery
 
