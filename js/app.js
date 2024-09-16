@@ -2,14 +2,14 @@
 document.addEventListener("DOMContentLoaded", () => {
     const swiper = new Swiper('.swiper', {
         autoplay: {
-           delay: 3000,
+           delay: 5000,
            disableOnInteraction: false
         },
     
         // Optional parameters
        direction: 'horizontal',
        loop: true,
-       speed: 1200,
+       speed: 2000,
        watchSlidesProgress: true,
        parallax: true,
     

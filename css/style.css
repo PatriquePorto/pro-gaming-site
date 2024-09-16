@@ -303,7 +303,7 @@ header.sticky ul {
     max-width: 600px;
     min-width: 600px;
     margin-bottom: 1.5rem;
-    color: #ADB7BE;
+    color: rgba(255, 255, 255, .75);
 }
 
 .d_starting {
@@ -601,9 +601,9 @@ header.sticky ul {
 }
 
 
-/* jarallax */
+/* Parallax */
 
-.jarallax {
+.parallax {
     position: relative;
     background: url('../images/background/3.webp') no-repeat center center/cover;
     background-attachment: fixed;
