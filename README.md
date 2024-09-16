@@ -21,7 +21,9 @@ Playhost is a web application built using cutting-edge technologies such as HTML
 
 - Responsive Website Design Using HTML5, CSS3, JavaScript.
 - Contains animations when scrolling and carousel slide.
+- The parallax effect is a visual technique where background elements move at a slower pace than foreground elements, creating a sense of depth and immersion in a digital environment.
 - Developed first with the Mobile First methodology, then for desktop.
+- An accordion is a graphical control element that allows users to expand and collapse content sections, often used in user interfaces to organize and hide/show information in a compact and space-efficient manner.
 
 ## License
 
