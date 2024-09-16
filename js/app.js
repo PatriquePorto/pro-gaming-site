@@ -57,7 +57,6 @@ function toggleMenu() {
    }
  }
  
-
 // Slick Slider Jquery
 
 $('.comentslick').slick({
