@@ -108,7 +108,7 @@ $('.comentslick').slick({
    ]
 })
 
-// Any questions? section
+// Any questions? section accordion
 
 document.getElementById('accordionContainer').addEventListener("click", () => {
    let target = event.target;
@@ -147,12 +147,12 @@ setTimeout(function() {
 element.click(openElement);
 
 function openElement() {
-    var messages = element.find('.messages');
-    var textInput = element.find('.text-box');
+    let messages = element.find('.messages');
+    let textInput = element.find('.text-box');
     element.find('>i').hide();
     element.addClass('expand');
     element.find('.chat').addClass('enter');
-    var strLength = textInput.val().length * 2;
+    let strLength = textInput.val().length * 2;
     textInput.keydown(onMetaAndEnter).prop("disabled", false).focus();
     element.off('click', openElement);
     element.find('.header button').click(closeElement);
@@ -189,12 +189,12 @@ function createUUID() {
 }
 
 function sendNewMessage() {
-    var userInput = $('.text-box');
-    var newMessage = userInput.html().replace(/\<div\>|\<br.*?\>/ig, '\n').replace(/\<\/div\>/g, '').trim().replace(/\n/g, '<br>');
+    let userInput = $('.text-box');
+    let newMessage = userInput.html().replace(/\<div\>|\<br.*?\>/ig, '\n').replace(/\<\/div\>/g, '').trim().replace(/\n/g, '<br>');
 
     if (!newMessage) return;
 
-    var messagesContainer = $('.messages');
+    let messagesContainer = $('.messages');
 
     messagesContainer.append([
         '<li class="self">',
