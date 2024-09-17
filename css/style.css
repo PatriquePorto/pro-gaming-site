@@ -973,8 +973,8 @@ footer form button {
     transform: translateY(70px);
     transition: all 250ms ease-out;
     border-radius: 50%;
-    opacity: 0;
-    background: -moz-linear-gradient(-45deg, #183850 0, #183850 25%, #192C46 50%, #22254C 75%, #22254C 100%);
+    opacity: 1;
+    
     background: -webkit-linear-gradient(-45deg, #183850 0, #183850 25%, #192C46 50%, #22254C 75%, #22254C 100%);
     background-repeat: no-repeat;
     background-attachment: fixed;
